@@ -16,6 +16,7 @@ namespace FACTURA
     {
         public static Ctl_Producto ctl_Producto = new Ctl_Producto();
         public static Ctl_Cliente ctl_cli = new Ctl_Cliente();
+        public static Ctl_factura ctl_fact = new Ctl_factura();
 
         public FORM_PRINCIPAL()
         {
@@ -44,6 +45,11 @@ namespace FACTURA
             FORM_FACTURA form_fact = new FORM_FACTURA();
             form_fact.Show();
 
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

@@ -47,13 +47,13 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TXT_BUSCAR_CEDULA = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.LABEL_CLIENTE = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LABEL_FECHA = new System.Windows.Forms.Label();
+            this.LABEL_NUM_FACTURA = new System.Windows.Forms.Label();
             this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
@@ -315,7 +315,7 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel5.Controls.Add(this.textBox1, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.TXT_BUSCAR_CEDULA, 1, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel5.Location = new System.Drawing.Point(2, 2);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -339,21 +339,22 @@
             this.label3.Text = "Buscar Cliente: ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // TXT_BUSCAR_CEDULA
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox1.Location = new System.Drawing.Point(216, 2);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(211, 20);
-            this.textBox1.TabIndex = 2;
+            this.TXT_BUSCAR_CEDULA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TXT_BUSCAR_CEDULA.Location = new System.Drawing.Point(216, 2);
+            this.TXT_BUSCAR_CEDULA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TXT_BUSCAR_CEDULA.Name = "TXT_BUSCAR_CEDULA";
+            this.TXT_BUSCAR_CEDULA.Size = new System.Drawing.Size(211, 20);
+            this.TXT_BUSCAR_CEDULA.TabIndex = 2;
+            this.TXT_BUSCAR_CEDULA.TextChanged += new System.EventHandler(this.TXT_BUSCAR_CEDULA_TextChanged);
             // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.ColumnCount = 2;
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.06838F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.93163F));
-            this.tableLayoutPanel6.Controls.Add(this.label5, 1, 0);
+            this.tableLayoutPanel6.Controls.Add(this.LABEL_CLIENTE, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel6.Location = new System.Drawing.Point(2, 34);
@@ -364,19 +365,19 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(429, 51);
             this.tableLayoutPanel6.TabIndex = 1;
             // 
-            // label5
+            // LABEL_CLIENTE
             // 
-            this.label5.AutoSize = true;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(113, 0);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(314, 51);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Ronaldo Jose Prieto Gonzalez";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LABEL_CLIENTE.AutoSize = true;
+            this.LABEL_CLIENTE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LABEL_CLIENTE.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LABEL_CLIENTE.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LABEL_CLIENTE.Location = new System.Drawing.Point(113, 0);
+            this.LABEL_CLIENTE.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LABEL_CLIENTE.Name = "LABEL_CLIENTE";
+            this.LABEL_CLIENTE.Size = new System.Drawing.Size(314, 51);
+            this.LABEL_CLIENTE.TabIndex = 1;
+            this.LABEL_CLIENTE.Text = "-";
+            this.LABEL_CLIENTE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
@@ -396,8 +397,8 @@
             // 
             this.tableLayoutPanel7.ColumnCount = 1;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.label6, 0, 1);
-            this.tableLayoutPanel7.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.LABEL_FECHA, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.LABEL_NUM_FACTURA, 0, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel7.Location = new System.Drawing.Point(439, 2);
             this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -408,32 +409,32 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(87, 87);
             this.tableLayoutPanel7.TabIndex = 2;
             // 
-            // label6
+            // LABEL_FECHA
             // 
-            this.label6.AutoSize = true;
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(2, 43);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 44);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "dd/mm/yyy";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LABEL_FECHA.AutoSize = true;
+            this.LABEL_FECHA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LABEL_FECHA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LABEL_FECHA.Location = new System.Drawing.Point(2, 43);
+            this.LABEL_FECHA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LABEL_FECHA.Name = "LABEL_FECHA";
+            this.LABEL_FECHA.Size = new System.Drawing.Size(83, 44);
+            this.LABEL_FECHA.TabIndex = 1;
+            this.LABEL_FECHA.Text = "dd/mm/yyy";
+            this.LABEL_FECHA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // LABEL_NUM_FACTURA
             // 
-            this.label2.AutoSize = true;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(2, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 43);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "FACT N° 1";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LABEL_NUM_FACTURA.AutoSize = true;
+            this.LABEL_NUM_FACTURA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LABEL_NUM_FACTURA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LABEL_NUM_FACTURA.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LABEL_NUM_FACTURA.Location = new System.Drawing.Point(2, 0);
+            this.LABEL_NUM_FACTURA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LABEL_NUM_FACTURA.Name = "LABEL_NUM_FACTURA";
+            this.LABEL_NUM_FACTURA.Size = new System.Drawing.Size(83, 43);
+            this.LABEL_NUM_FACTURA.TabIndex = 0;
+            this.LABEL_NUM_FACTURA.Text = "FACT N° #";
+            this.LABEL_NUM_FACTURA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tableLayoutPanel10
             // 
@@ -603,6 +604,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FORM_FACTURA";
             this.Text = "FORM_FACTURA";
+            this.Load += new System.EventHandler(this.FORM_FACTURA_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -635,13 +637,13 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TXT_BUSCAR_CEDULA;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label LABEL_CLIENTE;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LABEL_FECHA;
+        private System.Windows.Forms.Label LABEL_NUM_FACTURA;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;

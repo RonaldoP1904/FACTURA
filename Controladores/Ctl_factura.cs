@@ -36,6 +36,17 @@ namespace FACTURA.Controladores
 
         }
 
+        public int num_factura()
+        {
+            int num = 0;
+
+            if(lista.Count > 0)
+            {
+                num  = lista.Last().Num_factura;
+            }
+
+            return num + 1;
+        }
 
 
     }
